@@ -31,6 +31,7 @@ function todoList() {
           let liText = li.textContent;
           let liTextClear = liText.replace(/\u00D7/gi, "");
           localStorage.removeItem(liTextClear);
+             
         });
       }
     }
