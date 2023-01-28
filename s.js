@@ -46,7 +46,7 @@ function todoList() {
   
         closeButton.append(textClose);
         li.append(textLi);
-        li.append(closeButton);
+        li.append(closeButton)
         list.append(li);
         input.value = "";
   
@@ -57,7 +57,7 @@ function todoList() {
         });
   
         closeButton.addEventListener("click", () => {
-          li.remove();
+          li.remove();F
           let liText = li.textContent;
           let liTextClear = liText.replace(/\u00D7/gi, "");
           localStorage.removeItem(liTextClear);
